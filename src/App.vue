@@ -10,9 +10,20 @@
 </template>
 
 <script>
+// 13
+import { mapActions } from "vuex";
+
 export default {
   name: "App",
   components: {},
+  mounted() {
+    // 13-2
+    this.fetchMovies();
+  },
+  methods: {
+    // 13-1
+    ...mapActions("movies", ["fetchMovies"]),
+  },
 };
 </script>
 

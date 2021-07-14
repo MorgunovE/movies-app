@@ -32,3 +32,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 6. add index js in axios
 7. add env in root
 8. add instance in axios index
+9. add modules in store
+10. add movies js in modules
+11. add movies in index js
+12. add axios in movies
+13. mapactions in app
