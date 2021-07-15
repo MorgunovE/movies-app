@@ -1,4 +1,5 @@
 import axios from "axios";
+// import interseptors from "./interseptors";
 
 const instance = axios.create({
   // 8
@@ -8,5 +9,7 @@ const instance = axios.create({
     plot: "full",
   },
 });
+
+// interseptors(instance);
 
 export default instance;

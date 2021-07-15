@@ -37,3 +37,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 11. add movies in index js
 12. add axios in movies
 13. mapactions in app
+14. add interserptors in axios //закоменчено в axios and interseptors
+15. add mock in store
+16. add imdb_250.js in mock
+17. add ids in movies.js
