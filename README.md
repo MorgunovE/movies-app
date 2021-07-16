@@ -41,3 +41,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 15. add mock in store
 16. add imdb_250.js in mock
 17. add ids in movies.js
+18. add response in movies js
+19. add respone in intersoptors
+20. add serialize in movies js
+21. add mutation js in store
+22. import mutation in movies js
