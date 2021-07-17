@@ -4,8 +4,8 @@ import Vuex from "vuex";
 import movies from "./modules/movies";
 
 Vue.use(Vuex);
-
-export default new Vuex.Store({
+// 24
+const store = new Vuex.Store({
   state: {},
   mutations: {},
   actions: {},
@@ -14,3 +14,7 @@ export default new Vuex.Store({
     movies,
   },
 });
+// 25
+store.dispatch("initMoviesStore");
+// 24-1
+export default store;

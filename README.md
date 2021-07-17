@@ -46,3 +46,19 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 20. add serialize in movies js
 21. add mutation js in store
 22. import mutation in movies js
+23. add action in movies
+24. change store in index
+25. dispatch in store index js
+26. delete fetchMovies in app
+27. add movieslist in components
+28. import movieslist in app
+29. add getters in movies js
+30. import mapgetters in app
+31. add bcontainer in Movieslist
+32. add computed for list in movieslist
+33. add movieItem in components
+34. add MovieItem in movieslist
+35. add moviitem in moviesitem
+36. add posterbg in moviesitem
+37. add movie item info in movieitem
+38. add movie item controls in movieitem

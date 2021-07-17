@@ -34,6 +34,8 @@ const moviesStore = {
         top250IDs.slice(from, to),
     currentPage: ({ currentPage }) => currentPage,
     moviesPerPage: ({ moviesPerPage }) => moviesPerPage,
+    // 29
+    moviesList: ({ movies }) => movies,
   },
   mutations: {
     // 22-2
@@ -63,6 +65,7 @@ const moviesStore = {
       } catch (err) {
         console.log(err);
       }
+
       // tt0111161
       // const response = await axios.get("/",{
       //   params: {
@@ -70,6 +73,13 @@ const moviesStore = {
       //   }
       // });
       // const response = await axios.get("/?i=tt0111161");
+    },
+    // 23
+    initMoviesStore: {
+      handler({ dispatch }) {
+        dispatch("fetchMovies");
+      },
+      root: true,
     },
   },
 };
