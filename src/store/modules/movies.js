@@ -14,7 +14,8 @@ function serializeResponse(movies) {
   }, {});
 }
 // 22-1
-const { MOVIES } = mutations;
+// 60
+const { MOVIES, CURRENT_PAGE } = mutations;
 
 const moviesStore = {
   namespaced: true,
@@ -36,11 +37,17 @@ const moviesStore = {
     moviesPerPage: ({ moviesPerPage }) => moviesPerPage,
     // 29
     moviesList: ({ movies }) => movies,
+    // 55
+    moviesLength: ({ top250IDs }) => Object.keys(top250IDs).length,
   },
   mutations: {
     // 22-2
     [MOVIES](state, value) {
       state.movies = value;
+    },
+    // 60-1
+    [CURRENT_PAGE](state, value) {
+      state.currentPage = value;
     },
   },
   actions: {
@@ -80,6 +87,12 @@ const moviesStore = {
         dispatch("fetchMovies");
       },
       root: true,
+    },
+    // 58
+    changeCurrentPage({ commit, dispatch }, page) {
+      // 60-2
+      commit(CURRENT_PAGE, page);
+      dispatch("fetchMovies");
     },
   },
 };

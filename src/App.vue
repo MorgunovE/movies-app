@@ -4,6 +4,14 @@
     <PosterBg :poster="posterBg" />
     <!-- 45 -->
     <MoviesList :list="moviesList" @changePoster="onChangePoster" />
+    <!-- 50-2 -->
+    <!-- 54-1 -->
+    <MoviesPagination
+      :current-page="currentPage"
+      :per-page="moviesPerPage"
+      :total="moviesLength"
+      @pageChanged="onPageChanged"
+    />
   </div>
 </template>
 
@@ -15,6 +23,8 @@ import { mapActions, mapGetters } from "vuex";
 import MoviesList from "@/components/MoviesList";
 // 40
 import PosterBg from "@/components/PosterBg";
+// 50
+import MoviesPagination from "@/components/MoviesPagination";
 
 export default {
   name: "App",
@@ -27,10 +37,18 @@ export default {
     MoviesList,
     // 40-1
     PosterBg,
+    // 50-1
+    MoviesPagination,
   },
   computed: {
     // 30-1
-    ...mapGetters("movies", ["moviesList"]),
+    // 54
+    ...mapGetters("movies", [
+      "moviesList",
+      "currentPage",
+      "moviesPerPage",
+      "moviesLength",
+    ]),
   },
   mounted() {
     // 13-2
@@ -39,13 +57,40 @@ export default {
   },
   methods: {
     // 13-1
-    ...mapActions("movies", ["fetchMovies"]),
+    // 61
+    ...mapActions("movies", ["changeCurrentPage"]),
     // 45-1
     onChangePoster(poster) {
       // console.log(poster);
       // 47-2
       this.posterBg = poster;
     },
+    // 57
+    onPageChanged(page) {
+      // 63
+      this.$router.push({ query: { page } });
+      // 61-1
+      // this.changeCurrentPage(page);
+    },
+    // 65-1
+    onPageQueryChange({ page = 1 }) {
+      this.changeCurrentPage(Number(page));
+    },
+  },
+  watch: {
+    // 65
+    "$route.query": {
+      handler: "onPageQueryChange",
+      immediate: true,
+      deep: true,
+    },
+  },
+  created() {
+    // 64
+    // console.log(this.$route);
+    // if (this.$route.query.page) {
+    //   this.changeCurrentPage(Number(this.$route.query.page));
+    // }
   },
 };
 </script>

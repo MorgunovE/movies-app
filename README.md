@@ -72,3 +72,20 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 46. add props in posterbg
 47. add event in app posterBG
 48. add computed in posterbg
+49. add MoviesPagination in components
+50. import MoviesPagination in app
+51. add style in MoviesPagination
+52. add selector in MoviesPagination
+53. add computed in MoviesPagination
+54. add getter in app from movie js
+55. add getter in movies js
+56. add set in MoviesPagination
+57. add pageChanged in app
+58. add changecurrentpage in movies js
+59. add mutation in mutation
+60. add current page in movies js
+61. add method CURRENT_PAGE in app
+62. add router in main js
+63. add route in app
+64. add created in app
+65. add watch in app
