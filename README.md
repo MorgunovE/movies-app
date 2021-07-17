@@ -62,3 +62,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 36. add posterbg in moviesitem
 37. add movie item info in movieitem
 38. add movie item controls in movieitem
+39. add PosterBg in components
+40. import posterbg in app
+41. add style in posterbg
+42. add style in app
+43. add style in movieList
+44. add evetnt in movielist
+45. add emited event in app
+46. add props in posterbg
+47. add event in app posterBG
+48. add computed in posterbg
