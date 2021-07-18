@@ -98,3 +98,22 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 72. add dispatch in movies js
 73. add spiner in loader vue
 74. add style in loader vue
+75. add remove in moveisItem
+76. add removeItem in moviesList
+77. add method remove in movies
+78. add mutation in mutation
+79. import store in moviesList
+80. add Header vue in components
+81. add Header in app
+82. add style in Header
+83. add data in Header
+84. add debounce="500" in header
+85. add method search in movies
+86. import searchMovie in Header
+87. add err in movies
+88. add fetch in Header
+89. add marker search in movies
+90. add mutation isSearch in mutation
+91. import TOGGLE_SEARCH in movies
+92. add action toggleSearchState in header
+93. add getters in moviesList

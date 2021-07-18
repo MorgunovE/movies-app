@@ -4,6 +4,8 @@
     <Loader />
     <!-- 47 -->
     <PosterBg :poster="posterBg" />
+    <!-- 81-2 -->
+    <Header />
     <!-- 45 -->
     <MoviesList :list="moviesList" @changePoster="onChangePoster" />
     <!-- 50-2 -->
@@ -29,6 +31,8 @@ import PosterBg from "@/components/PosterBg";
 import MoviesPagination from "@/components/MoviesPagination";
 // 71
 import Loader from "@/components/Loader";
+// 81
+import Header from "@/components/Header";
 
 export default {
   name: "App",
@@ -45,6 +49,8 @@ export default {
     MoviesPagination,
     // 71-1
     Loader,
+    // 81-1
+    Header,
   },
   computed: {
     // 30-1
