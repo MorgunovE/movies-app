@@ -2,4 +2,6 @@ export default {
   MOVIES: "MOVIES",
   // 59
   CURRENT_PAGE: "CURRENT_PAGE",
+  // 67
+  TOGGLE_LOADER: "TOGGLE_LOADER",
 };

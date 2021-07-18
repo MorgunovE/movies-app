@@ -54,10 +54,14 @@ const moviesStore = {
     // 11-1
     // 17-3
     // 22-3
-    async fetchMovies({ getters, commit }) {
+    // 72
+    async fetchMovies({ getters, commit, dispatch }) {
       // 17-4
       // 22-4
       try {
+        // 72-1
+        dispatch("toggleLoader", true, { root: true });
+
         const { currentPage, moviesPerPage, slicedIDS } = getters;
         const from = currentPage * moviesPerPage - moviesPerPage;
         const to = currentPage * moviesPerPage;
@@ -71,6 +75,9 @@ const moviesStore = {
         commit(MOVIES, movies);
       } catch (err) {
         console.log(err);
+      } finally {
+        // 72-2
+        dispatch("toggleLoader", false, { root: true });
       }
 
       // tt0111161

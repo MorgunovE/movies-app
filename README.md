@@ -89,3 +89,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 63. add route in app
 64. add created in app
 65. add watch in app
+66. add loader js in modules
+67. add mutation in mutation
+68. import mutation in loader js
+69. import loaderStore in index js
+70. add loader vue in components
+71. import loader in app
+72. add dispatch in movies js
+73. add spiner in loader vue
+74. add style in loader vue

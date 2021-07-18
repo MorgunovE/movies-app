@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <!-- 71-2 -->
+    <Loader />
     <!-- 47 -->
     <PosterBg :poster="posterBg" />
     <!-- 45 -->
@@ -25,6 +27,8 @@ import MoviesList from "@/components/MoviesList";
 import PosterBg from "@/components/PosterBg";
 // 50
 import MoviesPagination from "@/components/MoviesPagination";
+// 71
+import Loader from "@/components/Loader";
 
 export default {
   name: "App",
@@ -39,6 +43,8 @@ export default {
     PosterBg,
     // 50-1
     MoviesPagination,
+    // 71-1
+    Loader,
   },
   computed: {
     // 30-1
