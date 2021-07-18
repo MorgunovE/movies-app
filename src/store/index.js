@@ -4,6 +4,8 @@ import Vuex from "vuex";
 import movies from "./modules/movies";
 // 69
 import loader from "./modules/loader";
+// 97
+import notification from "./modules/notification";
 
 Vue.use(Vuex);
 // 24
@@ -16,6 +18,8 @@ const store = new Vuex.Store({
     movies,
     // 69-1
     loader,
+    // 97-1
+    notification,
   },
 });
 // 25

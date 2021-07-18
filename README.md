@@ -117,3 +117,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 91. import TOGGLE_SEARCH in movies
 92. add action toggleSearchState in header
 93. add getters in moviesList
+94. add notification in modules
+95. add mutation in mutation
+96. add SHOW_TOAST_NOTIFY in notification js
+97. import notificationStore in index js
+98. add notification in components
+99. import notification in app
+100. add boostrap code in notification
+101. add alert in movies js
+102. add action in movielist

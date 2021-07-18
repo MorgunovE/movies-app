@@ -54,6 +54,8 @@ export default {
   methods: {
     // 79-1
     ...mapActions("movies", ["removeMovie"]),
+    // 102
+    ...mapActions(["showNotify"]),
     // 44-1
     onMouseOver(poster) {
       this.$emit("changePoster", poster);
@@ -65,6 +67,12 @@ export default {
       );
       if (isConfirmed) {
         this.removeMovie(id);
+        // 102-1
+        this.showNotify({
+          msg: "Movie deleted successfull",
+          variant: "success",
+          title: "Success",
+        });
       }
     },
   },

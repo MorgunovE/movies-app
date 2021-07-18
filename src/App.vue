@@ -2,6 +2,8 @@
   <div id="app">
     <!-- 71-2 -->
     <Loader />
+    <!-- 99-2 -->
+    <Notification />
     <!-- 47 -->
     <PosterBg :poster="posterBg" />
     <!-- 81-2 -->
@@ -33,6 +35,8 @@ import MoviesPagination from "@/components/MoviesPagination";
 import Loader from "@/components/Loader";
 // 81
 import Header from "@/components/Header";
+// 99
+import Notification from "@/components/Notification";
 
 export default {
   name: "App",
@@ -51,6 +55,8 @@ export default {
     Loader,
     // 81-1
     Header,
+    // 99-1
+    Notification,
   },
   computed: {
     // 30-1

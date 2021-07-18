@@ -139,7 +139,17 @@ const moviesStore = {
         commit(MOVIES, movies);
       } catch (err) {
         // 87-1
-        console.log(err.message);
+        // console.log(err.message);
+        // 101
+        dispatch(
+          "showNotify",
+          {
+            msg: err.message,
+            title: "Error",
+            variant: "danger",
+          },
+          { root: true }
+        );
       } finally {
         dispatch("toggleLoader", false, { root: true });
       }
