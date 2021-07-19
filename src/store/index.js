@@ -23,6 +23,7 @@ const store = new Vuex.Store({
   },
 });
 // 25
-store.dispatch("initMoviesStore");
+// 104
+// store.dispatch("initMoviesStore");
 // 24-1
 export default store;

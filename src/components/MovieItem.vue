@@ -12,8 +12,14 @@
       <!-- 38 -->
       <b-row class="movie-item-controls no-gutters">
         <div class="col">
-          <b-button class="btnItem" size="lg" block variant="outline-light"
-            >Edit</b-button
+          <!-- 105 -->
+          <b-button
+            class="btnItem"
+            size="lg"
+            block
+            variant="outline-light"
+            @click="showInfoModalEvent"
+            >Info</b-button
           >
         </div>
         <div class="col">
@@ -56,6 +62,10 @@ export default {
         id: this.movie.imdbID,
         title: this.movie.Title,
       });
+    },
+    // 105-1
+    showInfoModalEvent() {
+      this.$emit("showModal", this.movie.imdbID);
     },
   },
 };

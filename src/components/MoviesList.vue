@@ -7,10 +7,12 @@
         <b-col cols="3" v-for="(movie, key) in list" :key="key">
           <!-- 44 -->
           <!-- 76 -->
+          <!-- 106 -->
           <MovieItem
             :movie="movie"
             @mouseover.native="onMouseOver(movie.Poster)"
             @removeItem="onRemoveItem"
+            @showModal="onShowMovieInfo"
           />
         </b-col>
       </template>
@@ -19,6 +21,13 @@
         <div>Empty Movies List</div>
       </template>
     </b-row>
+    <!-- 106-2 -->
+    <b-modal :id="movieInfoModalId" size="xl" hide-footer hide-header>
+      <!-- 106-8 -->
+      <!-- 108-2 -->
+      <!-- 110 -->
+      <MovieInfoModalContent :movie="selectedMovie" />
+    </b-modal>
   </b-container>
 </template>
 
@@ -27,6 +36,8 @@
 // 93
 import { mapActions, mapGetters } from "vuex";
 import MovieItem from "./MovieItem.vue";
+// 108
+import MovieInfoModalContent from "./MovieInfoModalContent";
 
 export default {
   name: "MoviesList",
@@ -36,8 +47,16 @@ export default {
       default: () => ({}),
     },
   },
+  data: () => ({
+    // 106-4
+    movieInfoModalId: "modal-info",
+    // 106-5
+    selectedMovieID: "",
+  }),
   components: {
     MovieItem,
+    // 108-1
+    MovieInfoModalContent,
   },
   computed: {
     // 93-1
@@ -49,6 +68,10 @@ export default {
     // 93-2
     listTitle() {
       return this.isSearch ? "Search result" : "IMDB Top 250";
+    },
+    // 106-7
+    selectedMovie() {
+      return this.selectedMovieID ? this.list[this.selectedMovieID] : null;
     },
   },
   methods: {
@@ -74,6 +97,14 @@ export default {
           title: "Success",
         });
       }
+    },
+    // 106-1
+    onShowMovieInfo(id) {
+      // 106-3
+      this.$bvModal.show(this.movieInfoModalId);
+      // 106-6
+      this.selectedMovieID = id;
+      // console.log(id);
     },
   },
 };

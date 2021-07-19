@@ -105,12 +105,13 @@ const moviesStore = {
       // const response = await axios.get("/?i=tt0111161");
     },
     // 23
-    initMoviesStore: {
-      handler({ dispatch }) {
-        dispatch("fetchMovies");
-      },
-      root: true,
-    },
+    // 103
+    // initMoviesStore: {
+    //   handler({ dispatch }) {
+    //     dispatch("fetchMovies");
+    //   },
+    //   root: true,
+    // },
     // 58
     changeCurrentPage({ commit, dispatch }, page) {
       // 60-2

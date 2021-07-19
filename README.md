@@ -126,3 +126,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 100. add boostrap code in notification
 101. add alert in movies js
 102. add action in movielist
+103. delete initial from movie js
+104. delete initial frm index js
+105. add modal in movieitem
+106. import event in movieList
+107. add movieinfomodalcontent in components
+108. import ModalInfoContent in movieList
+109. add props in MovieInfoModalContent
+110. add props movie in movieList
+111. add style in moviecontentmodal
+112. import icons from boostrap in plugins boostrap index
+113. add icon in movie-COntant
