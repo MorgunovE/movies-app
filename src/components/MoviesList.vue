@@ -22,7 +22,14 @@
       </template>
     </b-row>
     <!-- 106-2 -->
-    <b-modal :id="movieInfoModalId" size="xl" hide-footer hide-header>
+    <!-- 115 -->
+    <b-modal
+      body-class="movie-modal-body"
+      :id="movieInfoModalId"
+      size="xl"
+      hide-footer
+      hide-header
+    >
       <!-- 106-8 -->
       <!-- 108-2 -->
       <!-- 110 -->
@@ -116,5 +123,16 @@ export default {
   font-size: 50px;
   margin-bottom: 30px;
   color: #fff;
+}
+</style>
+
+<style>
+/* 115-1 */
+.movie-modal-body {
+  padding: 0 !important;
+}
+.modal-content {
+  border: none !important;
+  background-color: #000 !important;
 }
 </style>

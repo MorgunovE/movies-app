@@ -137,3 +137,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 111. add style in moviecontentmodal
 112. import icons from boostrap in plugins boostrap index
 113. add icon in movie-COntant
+114. add style in modalcontent
+115. add style in movielist
+116. add movie-info-content in movieInfoModalContent
