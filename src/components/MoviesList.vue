@@ -33,7 +33,7 @@
       <!-- 106-8 -->
       <!-- 108-2 -->
       <!-- 110 -->
-      <MovieInfoModalContent :movie="selectedMovie" />
+      <MovieInfoModalContent :movie="selectedMovie" @closeModal="onCloseModal" />
     </b-modal>
   </b-container>
 </template>
