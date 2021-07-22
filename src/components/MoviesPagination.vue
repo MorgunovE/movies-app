@@ -55,7 +55,8 @@ export default {
 .movies-pagination {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  /* 121 */
+  margin-top: auto;
 }
 /* 52 */
 .movies-pagination >>> .pagination .page-item .page-link {

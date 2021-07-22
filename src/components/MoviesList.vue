@@ -33,7 +33,11 @@
       <!-- 106-8 -->
       <!-- 108-2 -->
       <!-- 110 -->
-      <MovieInfoModalContent :movie="selectedMovie" @closeModal="onCloseModal" />
+      <!-- 119 -->
+      <MovieInfoModalContent
+        :movie="selectedMovie"
+        @closeModal="onCloseModal"
+      />
     </b-modal>
   </b-container>
 </template>
@@ -112,6 +116,11 @@ export default {
       // 106-6
       this.selectedMovieID = id;
       // console.log(id);
+    },
+    // 119-1
+    onCloseModal() {
+      this.selectedMovieID = null;
+      this.$bvModal.hide(this.movieInfoModalId);
     },
   },
 };

@@ -143,3 +143,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 117. aff info in movieInfoModalContent
 118. add method closeModal in movieInfoModalContent
 119. add event in movieList
+120. add style in app
+121. add style in moviePagination

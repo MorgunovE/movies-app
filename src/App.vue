@@ -120,5 +120,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* 42 */
   position: relative;
+  /* 120 */
+  min-height: 100wh;
+  display: flex;
+  flex-direction: column;
 }
 </style>
