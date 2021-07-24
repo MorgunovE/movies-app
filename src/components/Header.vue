@@ -5,6 +5,7 @@
         <b-navbar-brand href="#">MovieDB</b-navbar-brand>
         <b-nav-form>
           <!-- 83-1 -->
+          <!-- 84 -->
           <b-form-input
             class="mr-sm-2 search-input"
             placeholder="Search"
@@ -35,6 +36,7 @@ export default {
   methods: {
     // 86-1
     // 88
+    // 92
     ...mapActions("movies", [
       "searchMovies",
       "fetchMovies",
@@ -44,6 +46,7 @@ export default {
     onSearchValueChange(val) {
       // console.log(val);
       // 88-1
+      // 92-1
       if (val) {
         this.searchMovies(val);
         this.toggleSearchState(true);

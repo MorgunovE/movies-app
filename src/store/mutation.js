@@ -1,4 +1,5 @@
 export default {
+  // 21
   MOVIES: "MOVIES",
   // 59
   CURRENT_PAGE: "CURRENT_PAGE",

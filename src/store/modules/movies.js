@@ -1,6 +1,6 @@
 // 17
 import IDs from "@/store/mock/imdb_250";
-// 11
+// 12
 import axios from "@/plugins/axios";
 // 22
 import mutations from "@/store/mutation";
@@ -71,13 +71,12 @@ const moviesStore = {
     // 17-3
     // 22-3
     // 72
-    async fetchMovies({ getters, commit, dispatch }) {
-      // 17-4
+    async fetchMovies({ getters, commit, dispatch }) {      
       // 22-4
       try {
         // 72-1
         dispatch("toggleLoader", true, { root: true });
-
+        // 17-4
         const { currentPage, moviesPerPage, slicedIDS } = getters;
         const from = currentPage * moviesPerPage - moviesPerPage;
         const to = currentPage * moviesPerPage;

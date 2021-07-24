@@ -46,6 +46,7 @@
 // 79
 // 93
 import { mapActions, mapGetters } from "vuex";
+// 34
 import MovieItem from "./MovieItem.vue";
 // 108
 import MovieInfoModalContent from "./MovieInfoModalContent";
@@ -65,6 +66,7 @@ export default {
     selectedMovieID: "",
   }),
   components: {
+    // 34-1
     MovieItem,
     // 108-1
     MovieInfoModalContent,

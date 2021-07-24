@@ -24,20 +24,20 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### step
-1. add bootstrap bootstrap-vue
+1. install bootstrap and bootstrap-vue
 2. add plugins in src
 3. add index in bootstrap
 4. import bootstrap in main js
 5. add axios in plugins
 6. add index js in axios
-7. add env in root
+7. add env in root - restart
 8. add instance in axios index
 9. add modules in store
 10. add movies js in modules
 11. add movies in index js
 12. add axios in movies
 13. mapactions in app
-14. add interserptors in axios //закоменчено в axios and interseptors
+14. add interserptors in axios
 15. add mock in store
 16. add imdb_250.js in mock
 17. add ids in movies.js
